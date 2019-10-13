@@ -7,7 +7,7 @@ const forecast = require('./utils/forecast.js')
 
 // Setting up custom constants
 const app = express()
-const port = 3000
+const port = process.env.PORT|| 3000
 
 //Define paths for express configuration
 publicDirectoryPage = path.join(__dirname, '../public')
